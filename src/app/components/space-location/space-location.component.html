@@ -1,0 +1,10 @@
+<h1>space cordinate now:</h1>
+<h2>
+    latitude:{{location.latitude}}
+    longitude:{{location.longitude}}
+    </h2>
+    <button mat-raised-button (click)="openDialog()">add note to this location</button>
+    <mat-list role="list" *ngFor="let obj of list">
+        <mat-list-item role="listitem">latitude:{{obj.location.latitude}},longitude:{{obj.location.longitude}}
+            ,note:{{obj.note}}</mat-list-item>
+    </mat-list>
